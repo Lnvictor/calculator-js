@@ -1,7 +1,7 @@
 var vision = document.querySelector(".vision");
-const operators = document.querySelectorAll(".factor,.operation");
-const equalSignal = document.querySelector(".equal");
-const clearButton = document.querySelector(".clear");
+var operators = document.querySelectorAll(".factor,.operation");
+var equalSignal = document.querySelector(".equal");
+var clearButton = document.querySelector(".clear");
 
 function addOnVision(expression){
     var previousExpression = vision.value;
