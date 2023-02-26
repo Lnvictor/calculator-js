@@ -29,3 +29,19 @@ equalSignal.onclick = function (){
 clearButton.onclick = function () {
     resetResult(vision);
 };
+
+// Evaluate expression with ENTER press as well
+document.addEventListener("keydown", (event) => {
+	var code = event.code;
+
+	if (code === "Enter"){
+		evaluateExpression(vision);
+	}
+})
+
+// Disable line breaks in textarea component
+vision.onkeydown = (event) => {
+	if (event.code === "Enter"){
+		return false;
+	}
+}
