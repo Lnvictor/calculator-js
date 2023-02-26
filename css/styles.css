@@ -59,6 +59,8 @@
     line-height: 60px;
     text-align: center;
     width: 220px; 
+    overflow: hidden;
+    resize: none;
 }
   
   .key.ativa,
