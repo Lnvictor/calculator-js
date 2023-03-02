@@ -9,7 +9,12 @@ function addOnVision(expression){
 }
 
 function evaluateExpression(element){
-    element.value = eval(element.value).toString();
+    try {
+        element.value = eval(element.value).toString();   
+    } catch (error) {
+        element.value = null;
+        alert("Non calculable");
+    }
 }
 
 function resetResult(element){
